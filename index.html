@@ -22,17 +22,57 @@
         <div class="space-y-6">
             <h2 class="text-2xl font-bold border-b pb-2">My Projects</h2>
             
-            <a href="/do-jjeon-coo/" class="block p-6 border rounded-xl hover:bg-blue-50 hover:border-blue-300 transition group">
-                <h3 class="text-xl font-bold group-hover:text-blue-600">🍪 두쫀쿠 (Do-Jjeon-Coo)</h3>
-                <p class="text-gray-500 mt-2">지역 기반 맛집 탐색 프로젝트</p>
-                <div class="mt-4 text-sm text-blue-500 font-medium">바로가기 &rarr;</div>
+            <a href="/do-jjeon-coo/" class="block p-6 border rounded-xl hover:bg-blue-50 hover:border-blue-300 transition group text-left">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold group-hover:text-blue-600">🍪 두쫀쿠 (Do-Jjeon-Coo)</h3>
+                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Web App</span>
+                </div>
+                <p class="text-gray-600 mt-2">
+                    사용자가 선택한 지역(구/군)을 기반으로 숨겨진 로컬 맛집을 찾아주는 스마트 웹 애플리케이션입니다.
+                    단순한 검색을 넘어 실시간 데이터 크롤링 기술과 지도 API를 결합하여 직관적인 UX를 제공합니다.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Java</span>
+                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Spring Boot</span>
+                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Playwright</span>
+                </div>
             </a>
+        </div>
 
-            <!-- 추후 프로젝트 추가 가능 -->
-            <div class="p-6 border rounded-xl bg-gray-50 text-gray-400">
-                <h3 class="text-lg font-bold">Coming Soon...</h3>
-                <p class="mt-2">더 많은 프로젝트가 준비 중입니다.</p>
-            </div>
+        <div class="mt-12 text-left space-y-6">
+            <h2 class="text-2xl font-bold border-b pb-2">기술 개발 일지 (Tech Log)</h2>
+            
+            <article>
+                <h3 class="text-xl font-semibold text-gray-800">🚀 Java Spring Boot와 크롤링의 만남</h3>
+                <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                    웹 데이터를 수집하고 가공하는 기술은 현대 IT 서비스에서 매우 중요합니다. 본 프로젝트는 
+                    <strong>Java Spring Boot</strong>를 백엔드 프레임워크로 채택하여 안정성을 확보하였으며, 
+                    <strong>Playwright</strong>를 활용하여 동적 웹 페이지(Dynamic Web Page)의 데이터를 정밀하게 수집하는 
+                    파이프라인을 구축하였습니다. 기존의 정적 크롤러(Jsoup 등)가 해결하지 못하는 자바스크립트 기반 사이트의 
+                    데이터까지 확보함으로써 정보의 질을 높일 수 있었습니다.
+                </p>
+            </article>
+
+            <article>
+                <h3 class="text-xl font-semibold text-gray-800">⚡ Serverless Architecture 도전</h3>
+                <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                    초기에는 로컬 DB(SQLite)를 활용하였으나, 배포 환경의 제약을 극복하기 위해 
+                    <strong>Serverless(서버리스)</strong> 아키텍처로의 전환을 시도했습니다. 
+                    Client-Side에서 <strong>Kakao Places API</strong>를 직접 호출하여 별도의 백엔드 서버 없이도 
+                    실시간 검색이 가능하도록 기능을 최적화하였으며, 이를 통해 유지보수 비용을 0원으로 낮추면서도 
+                    사용자에게는 빠른 응답 속도를 제공하는 성과를 거두었습니다.
+                </p>
+            </article>
+            
+            <article>
+                <h3 class="text-xl font-semibold text-gray-800">🎨 사용자 경험(UX) 중심의 UI 설계</h3>
+                <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                    복잡한 맛집 데이터를 지도(Map)와 리스트(List) 형태로 동시에 시각화하여 사용자가 
+                    직관적으로 위치를 파악할 수 있도록 했습니다. 특히 반응형 웹(Responsive Web) 디자인을 적용하여 
+                    PC와 모바일 환경 모두에서 최적화된 화면을 제공하며, 사용자 인터랙션(클릭, 검색 등)에 
+                    즉각적으로 반응하는 쾌적한 UX를 구현하는 데 집중했습니다.
+                </p>
+            </article>
         </div>
 
         <div class="mt-12 text-sm text-gray-400">
