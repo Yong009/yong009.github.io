@@ -2,4 +2,4 @@ User-agent: Yeti
 Allow: /
 User-agent: *
 Allow: /
-Sitemap: https://yong009.github.io/do-jjeon-coo/sitemap.xml
+Sitemap: https://yong009.github.io/sitemap.xml
